@@ -1,0 +1,16 @@
+
+default:
+  user: two
+  identification_type: license
+  encrypted_payload: <%= Encryptor::Coder.dump({
+    issuer: 'DMV',
+    expires_at: '2018-02-28'
+  }) %>
+
+one:
+  user: one
+  identification_type: nil
+  encrypted_payload: <%= Encryptor::Coder.dump({
+    issuer: 'DMV',
+    expires_at: '18-02-28'
+  }) %>

@@ -1,0 +1,107 @@
+en:
+  bridgepay:
+    errors:
+      '00001': Partial Authorization 
+      '10001': Missing Reference Number 
+      '10002': Invalid Card Number ‐ Blank/Null 
+      '10003': Invalid Card Type ‐ Doesn't match accepted card types 
+      '10004': Invalid Expiration Date ‐ Blank/Null 
+      '10005': Invalid Security Code ‐ Blank/Null 
+      '10007': Invalid Card Number ‐ Not Numeric 
+      '10008': Invalid Length for card type  
+      '10009': Invalid Expiration Date ‐ Card Expired 
+      '10010': Invalid Security Code ‐ Not Numeric 
+      '10011': Invalid Transaction ID  
+      '10012': Invalid Card Number ‐ Failed Mod10 
+      '10013': Invalid Expiration Date Value 
+      '10014': Invalid Security Code Length 
+      '10017': Invalid Expiration Date ‐ Invalid Month 
+      '10018': Invalid Expiration Date ‐ Invalid Year 
+      '10019': Invalid Expiration Date 
+      '10020': Invalid Client Identifier 
+      '10021': Invalid Request Element – Missing Element 
+      '10022': Invalid Request Type 
+      '10023': Password Expired 
+      '10024': Invalid Credentials 
+      '10025': Invalid Zip – Not Numeric 
+      '10026': Invalid Zip – Wrong Length 
+      '10027': Invalid Amount – Blank/Null 
+      '10028': Invalid Amount – Not Numeric 
+      '10029': Invalid Request Date/Time 
+      '10030': Invalid Token 
+      '10031': Invalid Track 
+      '10032': Invalid Track Identifier 
+      '10033': Invalid Void Request 
+      '10034': Invalid Encryption ID 
+      '10035': Invalid Account Number – Blank/Null 
+      '10036': Invalid Account Number – Not Numeric 
+      '10037': Invalid Payment Type – Blank/Null 
+      '10038': Invalid Payment Type – Unrecognized Payment Type 
+      '10039': Invalid Account Number – Account Number Does Not Exist
+      '10040': Missing Required Pass‐Thru Data Element 
+      '10041': Missing / Invalid BIN 
+      '20001': Tokenization Service Connection Error 
+      '20002': BridgePay Internal Server Error 
+      '20003': Client Service Unavailable 
+      '20004': Payment Service Sensitive Data Timeout 
+      '30004': Invalid Request Message 
+      '30005': Invalid Response Message 
+      '30006': New Password Doesn't Match Confirmation Password 
+      '30007': New Password Too Weak*
+      '30008': Missing Payment Card Data 
+      '30009': Internal Payment Card Data Error 
+      '30010': Invalid Record Format 
+      '30011': Invalid Merchant Number (from Gateway) 
+      '30012': Bad Card Number (from Gateway) 
+      '30013': Invalid Store Number 
+      '30020': Invalid Transaction Industry Type 
+      '30021': Missing Transaction Industry Type 
+      '30022': Processing Network Unavailable 
+      '30023': Invalid Account Number 
+      '30024': No Account 
+      '30025': Invalid Security Code 
+      '30026': Invalid Amount 
+      '30028': Settlement Failed 
+      '30029': Transaction Error 
+      '30030': Transaction data integrity validation error 
+      '30032': Denied by customer’s bank 
+      '30033': Insufficient funds 
+      '30034': Hold ‐ Pick up card 
+      '30035': Incorrect PIN 
+      '30036': Duplicate Transaction 
+      '30037': Card reported lost 
+      '30038': Card reported stolen 
+      '30039': Service not allowed 
+      '30040': Stop Recurring 
+      '30041': Unattempted Batch Decline 
+      '30042': Maximum transaction limit is exceeded at the moment. Try processing your transaction tomorrow. 
+      '30043': Re‐enter Transaction 
+      '30044': Unmapped decline 
+      '30045': Billing profile configuration error 
+      '30046': Pin Try Exceeded 
+      '30047': Refund was not processed/received 
+      '30048': Chargeback received 
+      '30049': Processing Canceled by User 
+      '30050': Invalid Transaction Category 
+      '30051': Invalid Verification Status 
+      '30052': Invalid Terminal Type 
+      '30053': Invalid Petroleum Product Type 
+      '30060': Invalid IApp User Id 
+      '30061': Account insert failed 
+      '30062': Merchant insert failed
+      '30070': New Password Previously Used 
+      '30071': Missing Clerk Id 
+      '30072': Call for Authorization 
+      '30073': Card is Restricted 
+      '30074': Declined due to fraud rules 
+      '30075': Bank Account Blacklisted 
+      '30100': Invalid Account Data – Blank/Null 
+      '30101': Invalid EMV Tag Data – Blank/Null 
+      '40001': Lodging Reauth Failed 
+      '40002': Missing Lodging Folio Number 
+      '80000': Gateway Services Available 
+      '80001': Gateway Services Unavailable 
+      '80002': Invalid Purchase Token 
+      '90000': Token Store failed to encrypt a token 
+      '90001': Token Store failed to decrypt a token 
+      '99999': Unknown Error 

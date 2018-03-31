@@ -1,0 +1,22 @@
+en:
+  api:
+    errors:
+      '10001': "Generic default error"
+      '10002': "Auth failure"
+      '10003': "User validation failure"
+      '10004': "Record not found"
+      '10005': "Unauthorized"
+      '10006': "Charge transaction failure"
+      '10007': "Credit transaction failure"
+      '10008': "Purchase transaction failure"
+      '10009': "Refund transaction failure"
+      '10010': "Comp transaction failure"
+      '10011': "Payment information failure"
+      '10012': "Invalid Format"
+      '10013': "Param is missing or the value is empty"
+
+      # Drink Command API errors; codes start at 20000+
+      '20400': "Charge transaction failure"
+      '20401': "Payment information failure"
+      '20402': "Line item failure"
+      '20404': "User with session token not found"

@@ -1,0 +1,6 @@
+one:
+  venue: one
+  style: <%= Camera.styles[:podium] %>
+  tap_id: nil
+  url: 'rtsp://admin:123456@192.168.88.94:7070/stream1'
+

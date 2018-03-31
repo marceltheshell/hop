@@ -1,0 +1,112 @@
+
+charge:
+  user: two
+  type: Transaction::Charge
+  amount_in_cents: 6000
+  balance_in_cents: 6000
+  created_at: '2017-03-25'
+  metadata:
+    Token: '1000000074340019'
+    ExpirationDate: 0818
+    AuthorizationCode: '128375'
+    ReferenceNumber:
+    AuthorizedAmount: '500'
+    OriginalAmount: '500'
+    GatewayTransID: '221763504'
+    GatewayMessage: A01 - Approved
+    InternalMessage: 'Approved: 128375 (approval code)'
+    GatewayResult: '00000'
+    AVSMessage:
+    AVSResult:
+    CVMessage:
+    CVResult:
+    TransactionCode: 3307b1c8-ac62-43db-8f66-8a4060023a41
+    TransactionDate: '20170327'
+    RemainingAmount: '0'
+    IsoCountryCode: '840'
+    IsoCurrencyCode: USD
+    IsoTransactionDate: '2017-03-27 13:18:59.43'
+    IsoRequestDate: '2017-03-27 13:18:59.43'
+    NetworkReferenceNumber:
+    MerchantCategoryCode:
+    NetworkMerchantId:
+    NetworkTerminalId:
+    CardType:
+    MaskedPan:
+    ResponseTypeDescription: sale
+    IsCommercialCard: 'False'
+    StreetMatchMessage:
+    WalletID:
+    WalletPaymentMethodID:
+    WalletResponseCode:
+    WalletResponseMessage:
+
+purchase:
+  user: two
+  type: Transaction::Purchase
+  amount_in_cents: -900
+  balance_in_cents: 5100
+  created_at: '2017-03-26'
+
+purchase_1:
+  user: two
+  type: Transaction::Purchase
+  amount_in_cents: -1050
+  balance_in_cents: 4050
+  created_at: '2017-03-27'
+
+purchase_2:
+  user: two
+  type: Transaction::Purchase
+  amount_in_cents: -850
+  balance_in_cents: 3200
+  created_at: '2017-03-28'
+
+credit:
+  user: two
+  type: Transaction::Credit
+  amount_in_cents: -500
+  balance_in_cents: 2700
+  created_at: '2017-03-29'
+  metadata:
+     Token: '1000000074340019'
+     ExpirationDate: 0118
+     AuthorizationCode: '466377'
+     ReferenceNumber:
+     AuthorizedAmount: '500'
+     OriginalAmount: '500'
+     GatewayTransID: '223838304'
+     GatewayMessage: A02 - Credit Posted
+     InternalMessage: Credit Posted
+     GatewayResult: '00000'
+     AVSMessage:
+     AVSResult:
+     CVMessage:
+     CVResult:
+     TransactionCode: a69bfc85-804f-4997-9c7a-bf750759408f
+     TransactionDate: '20170406'
+     RemainingAmount: '0'
+     IsoCountryCode: '840'
+     IsoCurrencyCode: USD
+     IsoTransactionDate: '2017-04-06 14:49:31.187'
+     IsoRequestDate: '2017-04-06 14:49:31.187'
+     NetworkReferenceNumber:
+     MerchantCategoryCode:
+     NetworkMerchantId:
+     NetworkTerminalId:
+     CardType:
+     MaskedPan:
+     ResponseTypeDescription: 'credit'
+     IsCommercialCard: 'False'
+     StreetMatchMessage:
+     WalletID:
+     WalletPaymentMethodID:
+     WalletResponseCode:
+     WalletResponseMessage:
+
+comp:
+  user: two
+  type: Transaction::Comp
+  amount_in_cents: 500
+  balance_in_cents: 3200
+  created_at: '2017-03-30'

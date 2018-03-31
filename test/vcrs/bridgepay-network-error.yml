@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.bridgepaynetsecuretest.com/PaymentService/RequestHandler.svc
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://bridgepaynetsecuretx.com/requesthandler"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+        xmlns:ins1="http://schemas.datacontract.org/2004/07/Bridgepay.Core.DataContracts"><env:Body><tns:ProcessRequest><tns:requestMsg>PHJlcXVlc3RIZWFkZXI+PENsaWVudElkZW50aWZpZXI+U09BUDwvQ2xpZW50SWRlbnRpZmllcj48VHJhbnNhY3Rpb25JRD44MWY3MzcxZC1iOTM4LTQwODctOWY2ZC0wZmEyNmFjZWFiMDc8L1RyYW5zYWN0aW9uSUQ+PFJlcXVlc3RUeXBlPjAwNDwvUmVxdWVzdFR5cGU+PFVzZXI+YmxyMDM3dGVzdDwvVXNlcj48UGFzc3dvcmQ+NTchc0VAM0ZtPC9QYXNzd29yZD48UmVxdWVzdERhdGVUaW1lPjIwMTcwMzI3MTc0NDExPC9SZXF1ZXN0RGF0ZVRpbWU+PHJlcXVlc3RNZXNzYWdlPjxNZXJjaGFudENvZGU+NzU4MDAwPC9NZXJjaGFudENvZGU+PE1lcmNoYW50QWNjb3VudENvZGU+NzU4MDAxPC9NZXJjaGFudEFjY291bnRDb2RlPjxUb2tlbj4xMDAwMDAwMDc0MzQwMDE5PC9Ub2tlbj48QW1vdW50PjEzMDAwPC9BbW91bnQ+PEV4cGlyYXRpb25EYXRlPjA4MTg8L0V4cGlyYXRpb25EYXRlPjxUcmFuc2FjdGlvblR5cGU+c2FsZTwvVHJhbnNhY3Rpb25UeXBlPjxUcmFuc0luZHVzdHJ5VHlwZT5FQzwvVHJhbnNJbmR1c3RyeVR5cGU+PEFjY3RUeXBlPlI8L0FjY3RUeXBlPjxIb2xkZXJUeXBlPlA8L0hvbGRlclR5cGU+PC9yZXF1ZXN0TWVzc2FnZT48L3JlcXVlc3RIZWFkZXI+</tns:requestMsg></tns:ProcessRequest></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://bridgepaynetsecuretx.com/requesthandler/IRequestHandler/ProcessRequest"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '1335'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Mar 2017 17:44:14 GMT
+      Content-Type:
+      - text/xml; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=5
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - LBCS=!dsOOhQpT7A+2yw5eNdJ7GmI10peQCmSKpvPwjr3BFzQQjWX92aerFtewKuyWO36Vp1onvvdEnnyqj/k=;
+        path=/; Secure; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - ''
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><ProcessRequestResponse
+        xmlns="http://bridgepaynetsecuretx.com/requesthandler"><ProcessRequestResult>PEF1dGg+PFRyYW5zYWN0aW9uSUQ+ODFmNzM3MWQtYjkzOC00MDg3LTlmNmQtMGZhMjZhY2VhYjA3PC9UcmFuc2FjdGlvbklEPjxSZXF1ZXN0VHlwZT4wMDQ8L1JlcXVlc3RUeXBlPjxSZXNwb25zZUNvZGU+MzAwMjI8L1Jlc3BvbnNlQ29kZT48UmVzcG9uc2VEZXNjcmlwdGlvbj5Qcm9jZXNzaW5nIE5ldHdvcmsgVW5hdmFpbGFibGU8L1Jlc3BvbnNlRGVzY3JpcHRpb24+PHJlc3BvbnNlTWVzc2FnZT48VG9rZW4+MTAwMDAwMDA3NDM0MDAxOTwvVG9rZW4+PEV4cGlyYXRpb25EYXRlPjA4MTg8L0V4cGlyYXRpb25EYXRlPjxBdXRob3JpemF0aW9uQ29kZSAvPjxSZWZlcmVuY2VOdW1iZXIgLz48QXV0aG9yaXplZEFtb3VudD4wPC9BdXRob3JpemVkQW1vdW50PjxPcmlnaW5hbEFtb3VudD4xMzAwMDwvT3JpZ2luYWxBbW91bnQ+PEdhdGV3YXlUcmFuc0lEPjIyMTc2NTMwNDwvR2F0ZXdheVRyYW5zSUQ+PEdhdGV3YXlNZXNzYWdlPkUwMiAtIFByb2Nlc3NpbmcgTmV0d29yayBVbmF2YWlsYWJsZSAoU3lzdGVtIGlzIHRlbXBvcmFyaWx5IHVuYXZhaWxhYmxlKTwvR2F0ZXdheU1lc3NhZ2U+PEludGVybmFsTWVzc2FnZT5Qcm9jZXNzaW5nIE5ldHdvcmsgVW5hdmFpbGFibGU8L0ludGVybmFsTWVzc2FnZT48R2F0ZXdheVJlc3VsdD4zMDAyMjwvR2F0ZXdheVJlc3VsdD48QVZTTWVzc2FnZSAvPjxBVlNSZXN1bHQgLz48Q1ZNZXNzYWdlIC8+PENWUmVzdWx0IC8+PFRyYW5zYWN0aW9uQ29kZT44MWY3MzcxZC1iOTM4LTQwODctOWY2ZC0wZmEyNmFjZWFiMDc8L1RyYW5zYWN0aW9uQ29kZT48VHJhbnNhY3Rpb25EYXRlPjIwMTcwMzI3PC9UcmFuc2FjdGlvbkRhdGU+PFJlbWFpbmluZ0Ftb3VudD4wPC9SZW1haW5pbmdBbW91bnQ+PElzb0NvdW50cnlDb2RlPjg0MDwvSXNvQ291bnRyeUNvZGU+PElzb0N1cnJlbmN5Q29kZT5VU0Q8L0lzb0N1cnJlbmN5Q29kZT48SXNvVHJhbnNhY3Rpb25EYXRlPjIwMTctMDMtMjcgMTM6NDM6NDEuNDM3PC9Jc29UcmFuc2FjdGlvbkRhdGU+PElzb1JlcXVlc3REYXRlPjIwMTctMDMtMjcgMTM6NDM6NDEuNDM3PC9Jc29SZXF1ZXN0RGF0ZT48TmV0d29ya1JlZmVyZW5jZU51bWJlciAvPjxNZXJjaGFudENhdGVnb3J5Q29kZSAvPjxOZXR3b3JrTWVyY2hhbnRJZCAvPjxOZXR3b3JrVGVybWluYWxJZCAvPjxDYXJkVHlwZSAvPjxNYXNrZWRQYW4gLz48UmVzcG9uc2VUeXBlRGVzY3JpcHRpb24+ZGVjbGluZTwvUmVzcG9uc2VUeXBlRGVzY3JpcHRpb24+PElzQ29tbWVyY2lhbENhcmQ+RmFsc2U8L0lzQ29tbWVyY2lhbENhcmQ+PFN0cmVldE1hdGNoTWVzc2FnZSAvPjxXYWxsZXRJRCAvPjxXYWxsZXRQYXltZW50TWV0aG9kSUQgLz48V2FsbGV0UmVzcG9uc2VDb2RlIC8+PFdhbGxldFJlc3BvbnNlTWVzc2FnZSAvPjwvcmVzcG9uc2VNZXNzYWdlPjwvQXV0aD4=</ProcessRequestResult></ProcessRequestResponse></s:Body></s:Envelope>
+    http_version: 
+  recorded_at: Mon, 27 Mar 2017 17:44:13 GMT
+recorded_with: VCR 3.0.3

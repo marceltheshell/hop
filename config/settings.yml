@@ -1,0 +1,12 @@
+#
+# Application wide settings.
+# Be sure to restart your server when you modify this file.
+#
+development:
+  credit_limit_in_cents: 20000
+
+test:
+  credit_limit_in_cents: 20000
+
+production:
+  credit_limit_in_cents: 20000

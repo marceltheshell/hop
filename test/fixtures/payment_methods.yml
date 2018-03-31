@@ -1,0 +1,30 @@
+
+default:
+  user: two
+  token: 1000000074340019
+  encrypted_payload: <%= Encryptor::Coder.dump({
+    card_type: 'visa',
+    expires_at: '2018-01-01',
+    name_on_card: 'Test T Tester',
+    masked_number: '********5555'
+  }) %>
+
+one:
+  user: one
+  token: aeea3fea8beb
+  encrypted_payload: <%= Encryptor::Coder.dump({
+    card_type: 'visa',
+    expires_at: '2017-01-01',
+    name_on_card: 'Test T Tester',
+    masked_number: '********5555'
+  }) %>
+
+two:
+  user: three
+  token: aeea3fea8bec
+  encrypted_payload: <%= Encryptor::Coder.dump({
+    card_type: 'visa',
+    expires_at: '2018-01-01',
+    name_on_card: 'tRess t tester',
+    masked_number: '********5551'
+  }) %>

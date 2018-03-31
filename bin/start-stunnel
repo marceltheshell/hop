@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#
+# This is a local wrapper to allow Profile to work
+# out of box. It is ignored in the .slugignore.
+#
+# Heroku stunnel build-pack will reinstall the 
+# real start-stunnel script on deploy.
+#
+exec "$@"

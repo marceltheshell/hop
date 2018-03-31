@@ -1,0 +1,6 @@
+<h1>Hi <%= @user.first_name %>, </h1>
+<p>
+  A deposit to your HOP account in the amount of <%= number_to_currency( @charge.amount_in_cents/100 ) %>
+  was successfully posted<br>
+</p>
+<p>Thanks for using HOP and have a great day!</p>

@@ -1,0 +1,8 @@
+one:
+  name: "Test Venue"
+  drinkcommand_id: "123"
+  street1: "Smarty Pants St."
+  city: "Somewhere"
+  state: "CA"
+  country: "US"
+  postal: "123456"

@@ -1,0 +1,39 @@
+
+one:
+  user: one
+  street1: 53233 Celestino Estates
+  city: Flatleyhaven
+  state: Utah
+  postal: "44039"
+
+two:
+  user: two
+  street1: 1234 Burns rd
+  city: Lilburn
+  state: Texas
+  postal: "55555"
+  country: "US"
+
+three:
+  user: two
+  street1: 1234 Burns rd
+  city: Lilburn
+  state: Texas
+  postal: "55555"
+  country: "US"
+
+four:
+  user: two
+  street1: 1234 Burns rd
+  city: Lilburn
+  state: GA
+  postal: "30097"
+  country: "US"
+
+five:
+  user: two
+  street1: 1234 Burns rd
+  city: Lilburn
+  state: DC
+  postal: "21111"
+  country: "US"

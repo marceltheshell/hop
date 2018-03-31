@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+require 'pathname'
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path('../../',  __FILE__)
+
+$app     = ARGV[0] || 'staging-hop'
+$db_name = ARGV[1] || 'hop-server-dev'
+
+if $app == "-h"
+  puts "usage: heroku-pull <heroku app name> <local database name>"
+  exit
+end
+
+Dir.chdir APP_ROOT do
+  puts "\n== Creating fresh snapshot @ Heroku =="
+  system "heroku pg:backups capture -a #{$app}"
+
+  puts "\n== Downloading snapshot =="
+  system "curl -o tmp/latest.dump `heroku pg:backups public-url -q -a #{$app}`"
+
+  puts "\n== Recreating local database =="
+  system "dropdb --if-exists #{$db_name}"
+  system "createdb #{$db_name}"
+
+  puts "\n== Restoring data locally =="
+  system "pg_restore --verbose --clean --no-acl --no-owner -h localhost -d #{$db_name} tmp/latest.dump"
+end

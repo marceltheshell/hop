@@ -1,0 +1,44 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture per the syntax in the comments below
+#
+service:
+  type: "ServiceUser"
+  role: "service"
+  email: "service@test.com"
+  password_digest: "$2a$10$2ndDU6DQvMPZilJZMJGMgOWyAgF2bgNn5ofCjMhjUe7AMSq37oMP."
+
+one:
+  role: "user"
+  email: "test@test.com"
+  password_digest: "$2a$10$2ndDU6DQvMPZilJZMJGMgOWyAgF2bgNn5ofCjMhjUe7AMSq37oMP."
+  rfid: "efg12345"
+  phone: "3153534443"
+
+two:
+  role: "user"
+  email: "55555@test.com"
+  password_digest: "123456"
+  first_name: "tess"
+  last_name: "testerine"
+  middle_name: "t"
+  height_in_cm: 183
+  weight_in_kg: 86
+  gender: "male"
+  phone: "9543534443"
+  rfid: "abcd1234"
+
+three:
+  role: "user"
+  email: "33333@test.com"
+  password_digest: "123456"
+  first_name: "tRess"
+  last_name: "tester"
+  middle_name: "t"
+  height_in_cm: 190
+  weight_in_kg: 90
+  gender: "male"
+  phone: "9543534445"
+  rfid: "584124064544"

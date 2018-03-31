@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twilio.com/2010-04-01/Accounts/ACcab31cb5b9371e338d9f59d56828a459/Messages.json
+    body:
+      encoding: US-ASCII
+      string: From=%2B15005550006&To=%2B17605551212&Body=This+is+test
+    headers:
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - twilio-ruby/4.13.0 (ruby/x86_64-darwin15 2.3.1-p112)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Authorization:
+      - Basic QUNjYWIzMWNiNWI5MzcxZTMzOGQ5ZjU5ZDU2ODI4YTQ1OTplNjk1OWMzYmQ0OTM0Y2Q2MWYwMWYzNDBhM2E5NzlmMw==
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 08 May 2017 16:07:30 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      Twilio-Request-Duration:
+      - '0.040'
+      Twilio-Request-Id:
+      - RQ413a58ff095b474ea9fe01037fd407fb
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      Content-Length:
+      - '776'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sid": "SM8df95c126f9044bb9217f17799aa0af9", "date_created": "Mon,
+        08 May 2017 16:07:30 +0000", "date_updated": "Mon, 08 May 2017 16:07:30 +0000",
+        "date_sent": null, "account_sid": "ACcab31cb5b9371e338d9f59d56828a459", "to":
+        "+17605551212", "from": "+15005550006", "messaging_service_sid": null, "body":
+        "This is test", "status": "queued", "num_segments": "1", "num_media": "0",
+        "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit":
+        "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACcab31cb5b9371e338d9f59d56828a459/Messages/SM8df95c126f9044bb9217f17799aa0af9.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/ACcab31cb5b9371e338d9f59d56828a459/Messages/SM8df95c126f9044bb9217f17799aa0af9/Media.json"}}'
+    http_version: 
+  recorded_at: Mon, 08 May 2017 16:07:30 GMT
+recorded_with: VCR 3.0.3
